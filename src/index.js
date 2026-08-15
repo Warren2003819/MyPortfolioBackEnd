@@ -1,9 +1,23 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 3000;
 
-app.use(cors());
+// UPDATE 1: Hayaang si Render ang mag-assign ng PORT, kung wala (tulad sa local), gamitin ang 3000
+const port = process.env.PORT || 3000;
+
+// UPDATE 2: Ilagay ang CORS Options
+const corsOptions = {
+  // Babasahin nito yung nilagay mong Vercel URL sa Render Environment Variables
+  origin: process.env.CLIENT_ORIGIN, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+};
+
+// I-apply ang secure CORS config
+app.use(cors(corsOptions));
+
+// Magandang practice na i-add ito para kung sakaling may POST request ka in the future, makakabasa ito ng JSON
+app.use(express.json());
 
 // --- DATA ---
 const myProjects = [
@@ -37,7 +51,6 @@ app.get('/about', (req, res) => {
       name: "Emjay Warren P. Campano",
       title: "IT Specialist & Hardware Technician",
       bio: "Passionate about hardware prototyping, microcontrollers, and modern web applications. Bridging the gap between physical electronics and software.",
-      // Pinalagyan ko ito ng placeholder image na 3D avatar. Pwede mong palitan yung link mamaya ng totoong picture mo!
       imageUrl: "profile.jpg",
       education: {
         degree: "BS Information Technology, Network Security",
@@ -48,5 +61,6 @@ app.get('/about', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  // UPDATE 3: Iniba nang konti ang console log para hindi nakalito kapag nasa Render (dahil hindi na localhost)
+  console.log(`Server is running and listening on port ${port}`);
 });
