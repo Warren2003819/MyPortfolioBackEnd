@@ -19,11 +19,11 @@ const myProjects = [
     id: 1,
     title: "Track My Ride: Intelligent Transit System",
     category: "IoT Capstone Project",
-    // Integrated your specific system framework and hardware correction
     description: "Designed and developed an IoT-based transit management system integrating ESP32 microcontrollers, GPS, and RFID technology for real-time bus tracking. Built on an efficient rule-based framework. Features hardware integration including a security relay connected directly to the vehicle's ignition gauge.",
     role: "Full-Stack Developer",
     status: "Completed - 2025",
-    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Track+My+Ride" // Placeholder para maangas, palitan mo ng totoong link
+    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Track+My+Ride",
+    link: "https://github.com/your-username/track-my-ride" // <-- PALITAN MO NG TOTOONG LINK NG RESEARCH MO
   },
   {
     id: 2,
@@ -32,7 +32,8 @@ const myProjects = [
     description: "Executed primary clerical duties, including high-volume data encoding, document sorting, and daily office maintenance. Managed and organized confidential records, ensuring strict privacy compliance and efficient data retrieval.",
     role: "OJT - Isabela State University",
     status: "Jan 2026 - May 2026",
-    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Records+Management+OJT"
+    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Records+Management+OJT",
+    link: "https://drive.google.com/drive/folders/your-ojt-files" // <-- PALITAN NG LINK NG CERTIFICATE O PICTURES MO
   },
   {
     id: 3,
@@ -41,7 +42,8 @@ const myProjects = [
     description: "Hardware Component Diagnostics & Troubleshooting; Windows OS Setup & Management; Basic Network Configuration; Web-Based System Development.",
     role: "Hardware Technician",
     status: "2022 - Present",
-    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Freelance+Services"
+    imageUrl: "https://placehold.co/600x300/1e212b/e0e5ec?text=Freelance+Services",
+    link: "#" // <-- KUNG WALANG LINK, LALAGYAN LANG NATIN NG '#' PARA HINDI MAG-ERROR
   }
 ];
 
