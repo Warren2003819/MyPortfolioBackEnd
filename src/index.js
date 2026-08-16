@@ -24,7 +24,7 @@ const myProjects = [
     status: "Completed - 2025",
     // MAPLIBRE CONTAINER: Dito maglo-load yung modern map
     visualMedia: `<div id="track-map" class="project-img" style="height: 220px; width: 100%; pointer-events: none;"></div>`,
-    link: "https://github.com/your-username/track-my-ride"
+    link: "http://iputc-trackmyride.free.nf"
   },
   {
     id: 2,
