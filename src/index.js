@@ -22,17 +22,8 @@ const myProjects = [
     description: "Designed and developed an IoT-based transit management system integrating ESP32 microcontrollers, GPS, and RFID technology for real-time bus tracking. Built on an efficient rule-based framework. Features hardware integration including a security relay connected directly to the vehicle's ignition gauge.",
     role: "Full-Stack Developer",
     status: "Completed - 2025",
-    // LIVE MAPA: OpenStreetMap naka-center sa Ilagan City
-    visualMedia: `
-      <div class="project-img map-wrapper" style="position: relative; overflow: hidden; pointer-events: none;">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-          src="https://www.openstreetmap.org/export/embed.html?bbox=121.85,17.11,121.93,17.17&layer=mapnik&marker=17.1432,121.8906" 
-          style="border: 0; width: 100%; height: 100%; filter: contrast(1.1) saturate(1.2);">
-        </iframe>
-        <div style="position: absolute; top: 15px; left: 15px; background: rgba(128, 0, 0, 0.9); color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-          📍 Ilagan City, Isabela
-        </div>
-      </div>`,
+    // MAPLIBRE CONTAINER: Dito maglo-load yung modern map
+    visualMedia: `<div id="track-map" class="project-img" style="height: 220px; width: 100%; pointer-events: none;"></div>`,
     link: "https://github.com/your-username/track-my-ride"
   },
   {
